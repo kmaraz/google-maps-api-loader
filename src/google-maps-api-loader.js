@@ -13,6 +13,8 @@ function loadAutoCompleteAPI(params) {
     script.src = urlBuilder({
         base: 'https://maps.googleapis.com/maps/api/js',
         libraries: params.libraries || [],
+        language: params.language || null,
+        sensor: params.sensor || null,
         callback: 'googleMapsAutoCompleteAPILoad'
     });
 
